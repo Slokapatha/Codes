@@ -1,0 +1,21 @@
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    if n % 2 != 0:
+        print("Weird")
+    for x in range(2, 6):
+        if n == x and n % 2 == 0:
+            print("Not Weird")
+    for x in range(6, 21):
+        if n == x and n % 2 == 0:
+            print("Weird")
+    if n > 20 and n % 2 == 0:
+        print("Not Weird")
+
