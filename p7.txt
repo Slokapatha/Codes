@@ -1,0 +1,10 @@
+from collections import OrderedDict
+N= int(input())
+sales={}
+for _ in range(N):
+    *item_parts, net_price= input().split()
+    name= " ".join(item_parts)
+    net_price= int(net_price)
+    sales[name]=  sales.get(name,0) + net_price
+for name,total in sales.items():
+    print(name, total)
